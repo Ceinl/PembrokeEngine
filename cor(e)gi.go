@@ -19,7 +19,7 @@ func SetFullscreen(fullscreen bool) {
 	ebiten.SetFullscreen(fullscreen)
 }
 
-func InitGame(screenWidth int, screenHeight int, ) {
+func InitGame(screenWidth int, screenHeight int) {
 
 	game = &CorgiGame{
 		screenWidth:  screenWidth,
@@ -28,9 +28,9 @@ func InitGame(screenWidth int, screenHeight int, ) {
 	}
 }
 
-func Run(title string, screenWidth int, screenHeight int) {
+func Run(title string) {
 
-	ebiten.SetWindowSize(screenWidth, screenHeight)
+	ebiten.SetWindowSize(game.screenWidth, game.screenHeight)
 	ebiten.SetWindowTitle(title)
 	if err := ebiten.RunGame(&Game{}); err != nil {
 		log.Fatal(err)
