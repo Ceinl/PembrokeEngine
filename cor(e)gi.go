@@ -3,7 +3,7 @@ package corgi
 import (
 	"log"
 
-	"github.com/Ceinl/corgiEngine/scenemanager" // Corrected import path
+	"github.com/Ceinl/CorgiEngine/scenemanager"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 

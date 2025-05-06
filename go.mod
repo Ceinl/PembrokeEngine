@@ -1,4 +1,4 @@
-module github.com/Ceinl/corgiEngine
+module github.com/Ceinl/CorgiEngine
 
 go 1.24.0
 
