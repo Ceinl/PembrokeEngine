@@ -3,34 +3,33 @@ package corgi
 import (
 	"log"
 
-	"github.com/Ceinl/corgiEngine/scenemanager"
+	"github.com/Ceinl/corgiEngine/scenemanager" // Corrected import path
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
 type CorgiGame struct {
-
 	screenWidth  int
 	screenHeight int
-	manager scenemanager.SceneManager
+	manager      scenemanager.SceneManager
 }
 
 var game *CorgiGame
 
-func SetFullscreen (fullscreen bool) {
+func SetFullscreen(fullscreen bool) {
 	ebiten.SetFullscreen(fullscreen)
 }
 
-func InitGame(screenWidth int, screenHeight int , sm scenemanager.SceneManager) {
+func InitGame(screenWidth int, screenHeight int, sm scenemanager.SceneManager) {
 
 	game = &CorgiGame{
 		screenWidth:  screenWidth,
 		screenHeight: screenHeight,
-		manager:      sm, 
+		manager:      sm,
 	}
 }
 
-func StartGame(title string,screenWidth int, screenHeight int) {
-	
+func StartGame(title string, screenWidth int, screenHeight int) {
+
 	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle(title)
 	if err := ebiten.RunGame(&Game{}); err != nil {
@@ -39,11 +38,10 @@ func StartGame(title string,screenWidth int, screenHeight int) {
 
 }
 
-
-type Game struct {}
+type Game struct{}
 
 func (g *Game) Update() error {
-	game.manager.Update()	
+	game.manager.Update()
 	return nil
 }
 
@@ -52,5 +50,5 @@ func (g *Game) Draw(screen *ebiten.Image) {
 }
 
 func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeight int) {
-	return screenWidth , screenHeight
+	return screenWidth, screenHeight
 }

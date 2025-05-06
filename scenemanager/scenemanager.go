@@ -8,12 +8,12 @@ import (
 var ActiveScene string
 
 type SceneManager struct {
-	Scenes []scene.Scene
+	Scenes      []scene.Scene
 	ActiveScene *scene.Scene
 }
 
 func NewSceneManager(scene scene.Scene) *SceneManager {
-	sm := SceneManager{ActiveScene: &scene}	
+	sm := SceneManager{ActiveScene: &scene}
 	sm.AddScene(&scene)
 
 	return &sm
