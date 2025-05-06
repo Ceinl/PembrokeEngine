@@ -1,4 +1,4 @@
-module github.com/Ceinl/CorgiEngine
+module github.com/Ceinl/PembrokeEngine
 
 go 1.24.0
 

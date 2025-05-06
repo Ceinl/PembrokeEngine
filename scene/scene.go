@@ -1,7 +1,7 @@
 package scene
 
 import (
-	"github.com/Ceinl/CorgiEngine/gameobject"
+	"github.com/Ceinl/PembrokeEngine/gameobject"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 

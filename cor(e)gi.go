@@ -3,7 +3,7 @@ package corgi
 import (
 	"log"
 
-	"github.com/Ceinl/CorgiEngine/scenemanager"
+	"github.com/Ceinl/PembrokeEngine/scenemanager"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 

@@ -1,7 +1,7 @@
 package scenemanager
 
 import (
-	"github.com/Ceinl/CorgiEngine/scene"
+	"github.com/Ceinl/PembrokeEngine/scene"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
